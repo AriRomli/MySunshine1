@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">MySunshine1</string>
+    <string name="app_name">My Sunshine 1</string>
+    <string name="sunday">sunday</string>
+    <string name="moderat_rain">Moderate Rain</string>
+    <string name="_17_derajat"></string>
+
 </resources>
