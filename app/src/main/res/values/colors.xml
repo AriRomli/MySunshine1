@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="padding_16">16dp</dimen>
-    <dimen name="padding_64">64dp</dimen>
+    <color name="colorPrimary">#283593</color>
+    <color name="colorPrimaryDark">#1a237E</color>
+    <color name="colorAccent">#283593</color>
 
 
 </resources>

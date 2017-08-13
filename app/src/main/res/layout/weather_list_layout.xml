@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:clickable="true"
+    android:layout_margin="8dp"
+    android:id="@+id/cv_weather_list">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_list_weather_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_list_weather_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:textAppearanceLarge"
+            android:text="Minggu, 24 Mei 2017"/>
+
+        <TextView
+            android:id="@+id/tv_list_weather_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:textAppearanceMedium"
+            android:text="Berawan"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_list_weather_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="27"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/cardview_default_radius" />
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
