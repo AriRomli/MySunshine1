@@ -20,7 +20,7 @@
         android:id="@+id/iv_list_weather_icon"
         android:layout_width="64dp"
         android:layout_height="64dp"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@mipmap/cloudy" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -32,14 +32,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="?android:textAppearanceLarge"
-            android:text="Minggu, 24 Mei 2017"/>
+            android:text="Sunday, 24 June 2017"/>
 
         <TextView
             android:id="@+id/tv_list_weather_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="?android:textAppearanceMedium"
-            android:text="Berawan"/>
+            android:text="Cloudy"/>
 
     </LinearLayout>
 
