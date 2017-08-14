@@ -1,56 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal"
+    android:id="@+id/cv_weather_list"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardUseCompatPadding="true"
-    android:clickable="true"
     android:layout_margin="8dp"
-    android:id="@+id/cv_weather_list">
+    android:clickable="true"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="@android:color/holo_green_light"
+    app:cardUseCompatPadding="true">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:padding="10dp">
 
-    <ImageView
-        android:id="@+id/iv_list_weather_icon"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:src="@mipmap/cloudy" />
+        <ImageView
+            android:id="@+id/iv_list_weather_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@mipmap/cloudy" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tv_list_weather_day"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="?android:textAppearanceLarge"
-            android:text="Sunday, 24 June 2017"/>
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_list_weather_status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="?android:textAppearanceMedium"
-            android:text="Cloudy"/>
+            <TextView
+                android:id="@+id/tv_list_weather_day"
+                style="?android:textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunday, 24 June 2017"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tv_list_weather_status"
+                style="?android:textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cloudy"
+                android:textColor="@android:color/holo_blue_dark" />
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/tv_list_weather_temperature"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/cardview_default_radius"
             android:text="27"
             android:textAlignment="center"
-            android:layout_gravity="center"
-            android:layout_marginLeft="@dimen/cardview_default_radius" />
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp" />
     </LinearLayout>
-    </android.support.v7.widget.CardView>
+</android.support.v7.widget.CardView>
