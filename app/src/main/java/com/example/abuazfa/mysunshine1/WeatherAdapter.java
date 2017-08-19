@@ -5,6 +5,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,11 +15,15 @@ import android.widget.Toast;
  */
 
 public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherViewHolder> {
+
+
     @Override
     public WeatherViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View contenView = LayoutInflater.from(parent.getContext()).inflate(R.layout.weather_list_layout,parent,false);
         return new WeatherViewHolder(contenView);
     }
+
+
 
     @Override
     public void onBindViewHolder(WeatherViewHolder holder, int position) {
@@ -29,7 +35,9 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherV
         return 20;
     }
 
-    public class WeatherViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class WeatherViewHolder extends RecyclerView.ViewHolder
+
+                    implements View.OnClickListener {
 
         private final CardView mWeatherCartView;
         private final TextView
@@ -50,14 +58,16 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherV
             mWeatherTmperature.setText(mWeatherTmperature.getText());
 
            mWeatherCartView.setOnClickListener(this);
+
         }
 
         @Override
         public void onClick(View v) {
-            int position = getAdapterPosition();
-            Toast.makeText(v.getContext(), "Position =" + position, Toast.LENGTH_SHORT).show();
 
 
-        }
+
     }
 }
+
+
+    }
